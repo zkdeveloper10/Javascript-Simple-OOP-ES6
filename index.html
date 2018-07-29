@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+    <title>Javascript-Simple-OOP-ES6</title>
+</head>
+<body>
+    <div class="uk-container uk-container-xsmall">
+        <form>
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Add Book</legend>
+        
+                <div class="uk-margin">
+                    <label for="title">Title</label>
+                    <input class="uk-input" type="text" id="title" placeholder="Input">
+                </div>
+
+                <div class="uk-margin">
+                    <label for="author">Author</label>
+                    <input class="uk-input" type="text" id="author" placeholder="Input">
+                </div>
+
+                <div class="uk-margin">
+                    <label for="year">Year</label>
+                    <input class="uk-input" type="number" id="year" placeholder="Input">
+                </div>
+        
+                <div class="uk-margin">
+                    <label for="description">Description</label>
+                    <textarea class="uk-textarea" rows="3" id="description" placeholder="Textarea"></textarea>
+                </div>
+
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label>
+                        <input class="uk-checkbox" type="checkbox" checked>
+                        English
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+        <table class="uk-table uk-table-small uk-table-striped uk-table-justify">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>Description</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
